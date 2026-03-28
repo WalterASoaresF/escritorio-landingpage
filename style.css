@@ -1,3 +1,17 @@
+:root{
+    --color-primary:    #1C2B2B;
+    --color-secondary:  #2E6B6B;
+    --color-accent:     #4A9E9E;
+    --color-light:      #D4DFE0;
+    --color-muted:      #8A9B9C;
+
+    --color-bg:         var(--color-primary);
+    --color-text:       var(--color-light);
+    --color-text-muted: var(--color-muted);
+    --color-btn:        var(--color-accent);
+    --color-btn-hover:  var(--color-secondary);
+}
+
 *{
     margin: 0;
 }
@@ -5,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1C2B2B;
+    background-color: var(--color-bg);
 }
 #nav-image{
     display: flex;
@@ -27,11 +41,11 @@
     height: 30vw;
     top: 8vh;
     right: 2vh;
-    background-color: #1C2B2B;
+    background-color: var(--color-bg);
 }
 .menu li a{
     text-decoration: none;
-    color: black;
+    color: var(--color-text);
 }
 .menu-toggle{
     max-width: 10vw;
