@@ -5,12 +5,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #1C2B2B;
 }
 #nav-image{
     display: flex;
-    margin: 0 2vh 0 0;
+    margin: 0 0 0 0;
     gap:4vw;
-    height: 5vw;
+    height: 30vw;
+    width: auto;
 }
 #nav-image img{
     height: 100%;
@@ -22,9 +24,10 @@
     flex-direction: column;
     padding-left: 2vh;
     padding-right: 2vh;
-    height: 20vw;
+    height: 30vw;
     top: 8vh;
-    background-color: white;
+    right: 2vh;
+    background-color: #1C2B2B;
 }
 .menu li a{
     text-decoration: none;
