@@ -338,7 +338,7 @@ footer p{
 }
 @media (min-width:1100px){
 #nav-image{
-    height: 4vw;
+    height: 3vw;
 }    
 .menu-toggle{
     display: none;
@@ -356,5 +356,87 @@ footer p{
     justify-content: space-around;
     height: 10vh;
 }
+#hero{
+    display: flex;
+    justify-content: space-between;
+    padding:0;
+}
+#hero-content {
+    height: 100%;
+    padding: 15vh 0vh 0 15vh;
+    width: 40%;
+}
+#hero-image{
+    margin:0;
+    padding: 20vh 0 0 0;
+    height: 30vw;
+}
 
+#areas{
+    padding-bottom: 15vh;
+}
+.area-card{
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25),
+              0 1px 4px rgba(0, 0, 0, 0.15);
+    }
+#areas-btn{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1100px;
+}
+.advogado{
+    width: 80%;
+    height: 50vh;
+    border-radius: 3vh;
+    border: solid 1px var(--color-bg);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.20),
+              0 2px 8px rgba(0, 0, 0, 0.12);
+}
+.photo-adv{
+    width: 55%;
+}
+@media (min-width:1100px) and (pointer: fine){
+h1 { font-size: 2rem;}
+h2 { font-size: 1.8rem;}
+h3 { font-size: 1.4rem;}
+h4 { font-size: 1.1rem;}
+p  { font-size: 1rem;}
+a  { font-size: 1rem;}
+#hero-content button {
+    box-shadow: 0 4px 16px rgba(74, 158, 158, 0.35),
+                0 1px 4px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#hero-content button:hover {
+    box-shadow: 0 8px 24px rgba(74, 158, 158, 0.45),
+                0 2px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+#hero-content button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(74, 158, 158, 0.30);
+}
+
+.area-card{
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+.area-card:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.30),
+                0 2px 8px rgba(0, 0, 0, 0.18);
+    transform: translateY(-6px);
+    background-color: var(--color-btn-hover);
+}
+.menu li:hover{
+    background-color: var(--color-btn-hover);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.30),
+
+}
+}
 }
