@@ -154,7 +154,7 @@
     flex-direction: column;
     align-items: center;
     gap: 8vh;
-    padding: 6vh 0;
+    padding: 6vh 0 4vh 0;
 }
 #team-juridico h1{
         color: var(--color-bg);
@@ -170,7 +170,7 @@
 .apresentacao{
     display: flex;
     flex-direction: column;
-    align-items: center; /* centraliza h3, span, p dentro do apresentacao */
+    align-items: center;
     width: 100%;
 }
 .apresentacao h1{
@@ -191,4 +191,75 @@
     width: 100%;
     object-fit: cover;
     object-position: top center;
+}
+#forms {
+  background-color: var(--color-primary);
+  padding: 6rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+#forms h1 {
+  color: var(--color-light);
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 500px;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  border: 1.5px solid var(--color-muted);
+  border-radius: 8px;
+  background-color: transparent;
+  color: var(--color-light);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: var(--color-muted);
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: var(--color-accent);
+}
+
+form textarea {
+  height: 140px;
+  resize: vertical;
+}
+
+form button {
+  padding: 0.9rem;
+  background-color: var(--color-btn);
+  color: var(--color-light);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+form button:hover {
+  background-color: var(--color-btn-hover);
+  transform: translateY(-2px);
+}
+
+form button:active {
+  transform: translateY(0);
 }
