@@ -1,136 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AWS Advocacia</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/images/favicon_io/favicon.ico" type="image/x-icon">
-    <meta name="description" content="Adriana e Walter Soares Advocacia — mais de 20 anos defendendo seus direitos em Salvador/BA nas areas trabalhista, previdenciária, cível, do consumidor e empresarial.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071d3d">
+  <meta name="description" content="WA Soares Sociedade de Advogados — atuação jurídica estratégica, ética e personalizada em Salvador/BA.">
+  <title>WA Soares | Sociedade de Advogados</title>
+  <link rel="icon" type="image/png" href="assets/images/WAsoaressociedadeadvogadoslogo.png">
+  <link rel="apple-touch-icon" href="assets/images/WAsoaressociedadeadvogadoslogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .brand { display: flex; align-items: center; gap: .65rem; color: #fff; font-family: "Playfair Display", Georgia, serif; font-size: 1.1rem; letter-spacing: .03em; }
+    .brand img { width: 3.25rem; height: 3.25rem; padding: .15rem; object-fit: contain; background: #fff; border-radius: 50%; filter: none; }
+    .brand span { white-space: nowrap; }
+  </style>
 </head>
 <body>
-    <header>
-        <nav id="topbar">
-            <div id="nav-image">
-                <img src="assets/images/logoheader.png" alt="logo do escritório">
-            </div>
-            <div class="menu-toggle" id="menu-toggle">
-                <img src="assets/images/hamburguer-menu.png" alt="burger-menu">
-            </div>
-            <ul class="menu" id="menu">
-                <li><a href="#areas">Onde atuamos</a></li>
-                <li><a href="#team-juridico">Nosso time</a></li>
-                <li><a href="#forms">Nosso email</a></li>
-                <li><a href="#CTA">Fale conosco!</a></li>
-            </ul>
-        </nav>
-        <div id="hero">
-            <div id="hero-content">
-                <h1>Seus direitos defendidos com experiência e compromisso</h1>
-                <h4>Há mais de 20 anos, a Adriana e Walter Soares Advocacia atua em Salvador 
-                com dedicação real a cada cliente — nas áreas trabalhista, previdenciária, cível, do consumidor e empresarial.</h4>
-                <button> <a href="#forms">Fale com um advogado</a></button>
-            </div>
-            <div id="hero-image">
-                <img src="assets/images/advogados-no-bg.png" alt="Adriana e Walter Soares">
-            </div> 
-        </div>
-    </header>
-
-    <section id="areas">
-        <h2> Onde atuamos</h2>
-        <section id="areas-btn">
-            <div class="area-card">
-            <img src="assets/images/tributario.png" alt="Direito Trabalhista">
-            <h3>Direito Trabalhista</h3>
-            <p>Demissões, verbas rescisórias, assédio moral e disputas entre empregado e empregador.</p>
-            </div>
-
-            <div class="area-card">
-            <img src="assets/images/previdenciario.png" alt="Direito Previdenciário">
-            <h3>Direito Previdenciário</h3>
-            <p>Aposentadoria, pensão por morte, auxílio-doença e benefícios do INSS.</p>
-            </div>
-
-            <div class="area-card">
-            <img src="assets/images/consumidor.png" alt="Direito do Consumidor">
-            <h3>Direito do Consumidor</h3>
-            <p>Negativação indevida, cobranças abusivas e relações com empresas e bancos.</p>
-            </div>
-
-            <div class="area-card">
-            <img src="assets/images/Civel.png" alt="Direito Cível">
-            <h3>Direito Cível</h3>
-            <p>Contratos, indenizações, danos morais e materiais.</p>
-            </div>
-
-            <div class="area-card">
-            <img src="assets/images/empresarial.png" alt="Direito Empresarial">
-            <h3>Direito Empresarial</h3>
-            <p>Abertura e encerramento de empresas, contratos comerciais e societários.</p>
-            </div>
-
-            <div class="area-card">
-            <img src="assets/images/administrativo.png" alt="Direito Administrativo">
-            <h3>Direito Administrativo</h3>
-            <p>Servidores públicos, concursos, licitações e relações com o Estado.</p>
-            </div>
-        </section>
+  <header class="site-header" id="inicio">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="WA Soares Sociedade de Advogados — início"><img src="assets/images/WAsoaressociedadeadvogadoslogo.png" alt="Logo WA Soares Sociedade de Advogados"><span>WA Soares</span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+      <ul class="menu" id="menu">
+        <li><a href="#escritorio">O escritório</a></li><li><a href="#areas">Áreas de atuação</a></li><li><a href="#equipe">Nossa equipe</a></li><li><a class="nav-contact" href="#contato">Fale conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-shape"></div>
+      <div class="container hero-grid">
+        <div class="hero-content"><p class="eyebrow">Advocacia com propósito</p><h1>Defendemos o que é <em>importante</em> para você.</h1><p class="hero-text">Atuação jurídica estratégica, próxima e comprometida com soluções seguras para cada história.</p><div class="hero-actions"><a class="button button-primary" href="#contato">Agende uma conversa <span aria-hidden="true">→</span></a><a class="text-link" href="#areas">Conheça nossa atuação</a></div></div>
+        <div class="hero-portrait"><div class="portrait-frame"><img src="assets/images/advogados-no-bg.png" alt="Walter e Adriana Soares"></div><p class="portrait-caption">Walter &amp; Adriana Soares<br><span>Sociedade de Advogados</span></p></div>
+      </div>
     </section>
-
-    <section id="team-juridico">
-        <h2>Nossos Advogados</h2>
-            <div class="advogado">
-                <div class="apresentacao">
-                    <h3>Dr. Walter Soares</h3>
-                    <p>Mais de 20 anos de atuação no ramo da advocacia.
-                    Especialista em Direito do Consumidor, Previdenciário, Cível, Trabalhista, Empresarial e Administrativo.
-                    Resultados pautados na ética e na honestidade.</p>
-                </div>
-                <div class="photo-adv">
-                    <picture>
-                    <source srcset="assets/images/Walter2.jpeg" media="(min-width: 1100px)">
-                    <img src="assets/images/Walter.jpeg" alt="Advogado Walter">
-                    </picture>
-                </div>
-            </div>
-            <div class="advogado">
-                <div class="apresentacao">
-                    <h3>Dra. Adriana Soares</h3>
-                     <p>Experiente na atuação jurídica, com foco em Direito do Consumidor, Previdenciário, Cível, Trabalhista, Empresarial e Administrativo.
-                        Resultados pautados na ética e na honestidade.</p>
-                </div>
-                <div class="photo-adv">
-                    <picture>
-                    <source srcset="assets/images/Adriana2.svg" media="(min-width: 1100px)">
-                    <img src="assets/images/Adriana.jpeg" alt="Advogada Adriana">
-                    </picture>
-                </div>
-            </div>
-    </section>
-
-    <section id="forms">
-        <h2>Contate-nos via email</h2>
-        <form action="https://formspree.io/f/xjgpwoqq" method="POST">
-        <input type="text" name="nome" placeholder="Seu nome">
-        <input type="email" name="email" placeholder="Seu email">
-        <input type="tel" name="telefone" placeholder="Seu telefone (com DDD)">
-        <textarea name="mensagem" placeholder="Como podemos ajudar?"></textarea>
-        <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <section id="CTA">
-        <h2>Fale diretamente conosco!</h2>
-        <div class="cta-img"><a href="https://wa.me/5571991833043?text=Olá!%20Vim%20pelo%20site%20da%20AWS%20Advocacia%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços."
-             target="_blank"><img src="assets/images/whatsapp.png" alt="icon whatsapp"></a></div>
-    </section>
-
-    <footer>
-        <p>&copy; AWS advocacia; todos os direitos reservados</p>
-    </footer>
-
-<script src="script.js"></script>
-    
+    <section class="intro section" id="escritorio"><div class="container intro-grid"><p class="eyebrow">WA Soares</p><div><h2>Excelência técnica, relações humanas e compromisso com resultados.</h2><p>Na WA Soares Sociedade de Advogados, cada demanda é conduzida com atenção, clareza e seriedade. Unimos experiência e atualização constante para oferecer uma advocacia confiável e personalizada.</p><a class="text-link dark-link" href="#equipe">Conheça os profissionais <span aria-hidden="true">→</span></a></div></div></section>
+    <section class="practice section" id="areas"><div class="container"><div class="section-heading"><div><p class="eyebrow">Nossa atuação</p><h2>Áreas em que podemos ajudar</h2></div><p>Orientação jurídica qualificada para pessoas, famílias e empresas.</p></div><div class="areas-grid">
+      <article class="area-card"><span class="area-number">01</span><img src="assets/images/tributario.png" alt=""><h3>Direito Trabalhista</h3><p>Relações de trabalho, verbas rescisórias, assédio e disputas entre empregado e empregador.</p></article>
+      <article class="area-card"><span class="area-number">02</span><img src="assets/images/previdenciario.png" alt=""><h3>Direito Previdenciário</h3><p>Aposentadorias, pensões, auxílio-doença e demais benefícios junto ao INSS.</p></article>
+      <article class="area-card"><span class="area-number">03</span><img src="assets/images/consumidor.png" alt=""><h3>Direito do Consumidor</h3><p>Cobranças indevidas, relações com bancos e empresas, e defesa de seus direitos.</p></article>
+      <article class="area-card"><span class="area-number">04</span><img src="assets/images/Civel.png" alt=""><h3>Direito Cível</h3><p>Contratos, indenizações, responsabilidade civil e questões patrimoniais.</p></article>
+      <article class="area-card"><span class="area-number">05</span><img src="assets/images/empresarial.png" alt=""><h3>Direito Empresarial</h3><p>Estruturação de negócios, contratos comerciais e questões societárias.</p></article>
+      <article class="area-card"><span class="area-number">06</span><img src="assets/images/administrativo.png" alt=""><h3>Direito Administrativo</h3><p>Servidores públicos, concursos, licitações e relações com o Estado.</p></article>
+    </div></div></section>
+    <section class="team section" id="equipe"><div class="container"><div class="team-heading"><div><p class="eyebrow">Nossa equipe</p><h2>Profissionais que inspiram confiança.</h2></div></div><div class="team-grid">
+      <article class="professional"><div class="professional-image"><img src="assets/images/Walter2.jpeg" alt="Dr. Walter Soares"></div><div class="professional-content"><p class="role">Sócio fundador</p><h3>Dr. Walter Soares</h3><p>Mais de 20 anos de experiência na advocacia, com atuação pautada pela ética, honestidade e compromisso com cada cliente.</p></div></article>
+      <article class="professional"><div class="professional-image"><img src="assets/images/Adriana.jpeg" alt="Dra. Adriana Soares"></div><div class="professional-content"><p class="role">Sócia fundadora</p><h3>Dra. Adriana Soares</h3><p>Experiência jurídica e atendimento próximo, com foco em soluções responsáveis e seguras para cada demanda.</p></div></article>
+    </div></div></section>
+    <section class="contact section" id="contato"><div class="container contact-grid"><div class="contact-copy"><p class="eyebrow">Entre em contato</p><h2>Vamos conversar sobre o seu caso?</h2><p>Preencha o formulário ou fale diretamente conosco pelo WhatsApp. Retornaremos assim que possível.</p><a class="whatsapp-link" href="https://wa.me/5571991833043?text=Olá!%20Vim%20pelo%20site%20da%20WA%20Soares%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços." target="_blank" rel="noopener"><span>✦</span> Atendimento via WhatsApp</a></div><form action="https://formspree.io/f/xjgpwoqq" method="POST"><label>Nome<input type="text" name="nome" autocomplete="name" required></label><label>E-mail<input type="email" name="email" autocomplete="email" required></label><label>Telefone<input type="tel" name="telefone" autocomplete="tel"></label><label>Como podemos ajudar?<textarea name="mensagem" rows="4" required></textarea></label><button class="button button-primary" type="submit">Enviar mensagem <span aria-hidden="true">→</span></button></form></div></section>
+  </main>
+  <footer><div class="container footer-content"><a class="footer-brand" href="#inicio">WA <span>SOARES</span></a><p>© <span id="year"></span> WA Soares Sociedade de Advogados. Todos os direitos reservados.</p></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
