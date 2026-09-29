@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://awsadvocacia.adv.br/sitemap.xml
