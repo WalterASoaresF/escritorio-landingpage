@@ -1,5 +1,12 @@
 document.documentElement.classList.add("js");
 
+// Animação de entrada do cabeçalho e do hero ao carregar a página
+requestAnimationFrame(()=>requestAnimationFrame(()=>{
+  document.querySelector(".site-header")?.classList.add("in");
+  document.querySelector(".hero-content")?.classList.add("in");
+  document.querySelector(".hero-portrait")?.classList.add("in");
+}));
+
 const toggle=document.getElementById("menu-toggle");
 const menu=document.getElementById("menu");
 const header=document.querySelector(".site-header");
